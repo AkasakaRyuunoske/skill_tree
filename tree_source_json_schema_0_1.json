@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "skill_tree": {
+      "type": "string"
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "patternProperties": {
+          "^[0-9]+$": {
+            "type": "object",
+            "properties": {
+              "actuall_skill_id": {
+                "type": "number"
+              },
+              "icon": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "minor",
+                  "major",
+                  "unique"
+                ]
+              },
+              "stats": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "flavor_text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "actuall_skill_id",
+              "icon",
+              "name",
+              "type",
+              "stats",
+              "flavor_text"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "skill_tree",
+    "nodes"
+  ],
+  "additionalProperties": false
+}
