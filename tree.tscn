@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://3231m0hrm5bm"]
+
+[node name="tree" type="Control" unique_id=89925543]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1660534002]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 648.0
+columns = 2
+
+[node name="tree_label" type="Label" parent="GridContainer" unique_id=1942155523]
+layout_mode = 2
+text = "This is a simple tree
+Ver 0.1"
