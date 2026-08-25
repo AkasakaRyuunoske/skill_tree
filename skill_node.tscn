@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://hsduarhmd8q0"]
+
+[ext_resource type="Texture2D" uid="uid://bal6ne1v5fmxm" path="res://icon.svg" id="1_fbu8u"]
+[ext_resource type="Script" uid="uid://bvs6gn47xnq8x" path="res://skill_node.gd" id="2_0isc3"]
+
+[node name="skill_node" type="TextureButton" unique_id=284363510]
+offset_left = 271.0
+offset_top = 162.0
+offset_right = 367.0
+offset_bottom = 255.0
+toggle_mode = true
+texture_normal = ExtResource("1_fbu8u")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("2_0isc3")
+
+[node name="Panel" type="Panel" parent="." unique_id=373571823]
+layout_mode = 0
+offset_right = 96.0
+offset_bottom = 90.0
+mouse_filter = 2
+
+[node name="description_container" type="MarginContainer" parent="." unique_id=2031436649]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 48.0
+grow_vertical = 0
+
+[node name="description" type="Label" parent="description_container" unique_id=32095852]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+text = "Soslo? / 4"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="connection_line" type="Line2D" parent="." unique_id=802465399]
+top_level = true
+z_index = -1
+width = 3.0
+default_color = Color(0.40471834, 0.28814495, 0.2786364, 1)
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

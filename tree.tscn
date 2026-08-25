@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://3231m0hrm5bm"]
 
+[ext_resource type="PackedScene" uid="uid://hsduarhmd8q0" path="res://skill_node.tscn" id="1_brfkd"]
+
 [node name="tree" type="Control" unique_id=89925543]
 layout_mode = 3
 anchors_preset = 15
@@ -8,13 +10,53 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="GridContainer" type="GridContainer" parent="." unique_id=1660534002]
+[node name="tree_label" type="Label" parent="." unique_id=1942155523]
 layout_mode = 0
-offset_right = 1151.0
-offset_bottom = 648.0
-columns = 2
-
-[node name="tree_label" type="Label" parent="GridContainer" unique_id=1942155523]
-layout_mode = 2
+offset_right = 153.0
+offset_bottom = 49.0
 text = "This is a simple tree
 Ver 0.1"
+
+[node name="skill_node" parent="." unique_id=284363510 instance=ExtResource("1_brfkd")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.23500001
+anchor_top = 0.25
+anchor_right = 0.319
+anchor_bottom = 0.39400002
+offset_left = -27.720032
+offset_top = 24.0
+offset_right = -28.488007
+offset_bottom = 23.687988
+
+[node name="TextureButton" parent="skill_node" unique_id=925485314 instance=ExtResource("1_brfkd")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 2.042
+anchor_right = 3.042
+anchor_bottom = 1.0
+offset_left = -2.032013
+offset_top = 0.0
+offset_right = -2.032013
+offset_bottom = 0.0
+disabled = true
+
+[node name="TextureButton" parent="skill_node/TextureButton" unique_id=141561609 instance=ExtResource("1_brfkd")]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -162.0
+offset_right = 94.0
+offset_bottom = -69.0
+disabled = true
+
+[node name="TextureButton2" parent="skill_node" unique_id=2075131214 instance=ExtResource("1_brfkd")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 2.042
+anchor_right = 3.042
+anchor_bottom = 1.0
+offset_left = -0.03201294
+offset_top = 152.0
+offset_right = -0.03201294
+offset_bottom = 152.0
+disabled = true
