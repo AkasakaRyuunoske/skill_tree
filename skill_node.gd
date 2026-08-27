@@ -5,7 +5,6 @@ class_name SkillNode
 @onready var panel = $Panel
 @onready var node_label = $description_container/description
 @onready var connection_line = $connection_line
-@onready var skill_node: SkillNode = $"."
 
 @onready var player = get_tree().get_first_node_in_group("player")
 @onready var ui = get_tree().get_first_node_in_group("ui")
@@ -24,7 +23,7 @@ func set_level(value):
 
 func _ready():
 	if description_stats.size() > 0:
-		skill_node.tooltip_text = description_stats[0]
+		tooltip_text = description_stats[0]
 	
 	if get_parent() is SkillNode:
 		connection_line.add_point(global_position + size/2)

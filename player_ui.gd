@@ -1,7 +1,5 @@
 extends Label
 
-@onready var player_ui: Label = $"."
-
 @onready var player = get_tree().get_first_node_in_group("player")
 @onready var nodes = get_tree().get_nodes_in_group("nodes")
 
@@ -21,7 +19,7 @@ func _process(delta: float) -> void:
 
 func _on_update_player_stats_ui(player):
 	print("updating stats....")
-	player_ui.text = TITLE \
+	text = TITLE \
 	+ "Level: " + str(player.level) + "\n" \
 	+ "Max HP: " + str(player.max_hp) + "\n" \
 	+ "Max Mana: " + str(player.max_mana) + "\n" \
