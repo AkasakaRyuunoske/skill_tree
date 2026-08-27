@@ -2,6 +2,28 @@
 
 [ext_resource type="PackedScene" uid="uid://hsduarhmd8q0" path="res://skill_node.tscn" id="1_brfkd"]
 [ext_resource type="PackedScene" uid="uid://crm3frkqu7cl7" path="res://player.tscn" id="2_nnvrw"]
+[ext_resource type="Script" uid="uid://bvfeu6406r7xe" path="res://player_ui.gd" id="3_gvmkm"]
+
+[sub_resource type="GDScript" id="GDScript_nnvrw"]
+script/source = "extends Label
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+
+func _on_focus_entered() -> void:
+	pass # Replace with function body.
+
+
+	
+"
 
 [node name="tree" type="Control" unique_id=89925543]
 layout_mode = 3
@@ -17,8 +39,9 @@ offset_right = 153.0
 offset_bottom = 49.0
 text = "This is a simple tree
 Ver 0.2"
+script = SubResource("GDScript_nnvrw")
 
-[node name="skill_node" parent="." unique_id=284363510 instance=ExtResource("1_brfkd")]
+[node name="skill_node" parent="." unique_id=284363510 groups=["nodes"] instance=ExtResource("1_brfkd")]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.21100001
@@ -29,10 +52,9 @@ offset_left = -0.072006226
 offset_top = 0.024002075
 offset_right = 0.31201172
 offset_bottom = -0.2880249
-node_name = ""
 description_stats = Array[String](["+10 max hp"])
 
-[node name="TextureButton" parent="skill_node" unique_id=925485314 instance=ExtResource("1_brfkd")]
+[node name="TextureButton" parent="skill_node" unique_id=925485314 groups=["nodes"] instance=ExtResource("1_brfkd")]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 2.042
@@ -43,10 +65,9 @@ offset_top = 0.0
 offset_right = -2.032013
 offset_bottom = 0.0
 disabled = true
-node_name = ""
 description_stats = Array[String](["+15 max mana"])
 
-[node name="TextureButton" parent="skill_node/TextureButton" unique_id=141561609 instance=ExtResource("1_brfkd")]
+[node name="TextureButton" parent="skill_node/TextureButton" unique_id=141561609 groups=["nodes"] instance=ExtResource("1_brfkd")]
 layout_mode = 1
 anchors_preset = -1
 anchor_top = -1.7420001
@@ -57,10 +78,9 @@ offset_top = 0.006011963
 offset_right = 0.01599884
 offset_bottom = 0.0060043335
 disabled = true
-node_name = ""
 description_stats = Array[String](["10% increased damage"])
 
-[node name="TextureButton2" parent="skill_node" unique_id=2075131214 instance=ExtResource("1_brfkd")]
+[node name="TextureButton2" parent="skill_node" unique_id=2075131214 groups=["nodes"] instance=ExtResource("1_brfkd")]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 2.042
@@ -72,7 +92,16 @@ offset_top = 0.037994385
 offset_right = -0.03201294
 offset_bottom = 0.037994385
 disabled = true
-node_name = ""
 description_stats = Array[String](["+30 max hp"])
 
 [node name="player" parent="." unique_id=1849651985 groups=["player"] instance=ExtResource("2_nnvrw")]
+
+[node name="player_ui" type="Label" parent="." unique_id=290110356 groups=["UI"]]
+layout_mode = 0
+offset_left = 714.0
+offset_right = 754.0
+offset_bottom = 23.0
+text = "Stats:"
+script = ExtResource("3_gvmkm")
+
+[connection signal="focus_entered" from="tree_label" to="tree_label" method="_on_focus_entered"]

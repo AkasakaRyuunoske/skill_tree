@@ -8,6 +8,7 @@ class_name SkillNode
 @onready var skill_node: SkillNode = $"."
 
 @onready var player = get_tree().get_first_node_in_group("player")
+@onready var ui = get_tree().get_first_node_in_group("ui")
 
 @export var level: int:
 	set = set_level
@@ -15,6 +16,7 @@ class_name SkillNode
 @export var icon: Image
 @export var description_stats: Array[String]
 
+signal update_player_stats_ui(player : Object)
 
 func set_level(value):
 	level = value
@@ -34,7 +36,8 @@ func _on_pressed() -> void:
 	
 	if old_level != level:
 		player.level += 1
-	
+		update_player_stats_ui.emit(player)
+		
 	panel.show_behind_parent = true
 	
 	connection_line.default_color = Color(0.804, 0.027, 1.0, 1.0)
