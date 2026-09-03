@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://3231m0hrm5bm"]
 
-[ext_resource type="PackedScene" uid="uid://hsduarhmd8q0" path="res://skill_node.tscn" id="1_brfkd"]
-[ext_resource type="PackedScene" uid="uid://crm3frkqu7cl7" path="res://player.tscn" id="2_nnvrw"]
-[ext_resource type="Script" uid="uid://bvfeu6406r7xe" path="res://player_ui.gd" id="3_gvmkm"]
+[ext_resource type="PackedScene" uid="uid://hsduarhmd8q0" path="res://godot_project/skill_tree/skill_node.tscn" id="1_brfkd"]
+[ext_resource type="PackedScene" uid="uid://crm3frkqu7cl7" path="res://godot_project/player/player.tscn" id="2_nnvrw"]
+[ext_resource type="Script" uid="uid://bvfeu6406r7xe" path="res://godot_project/player/player_ui.gd" id="3_gvmkm"]
 
 [sub_resource type="GDScript" id="GDScript_nnvrw"]
 script/source = "extends Label
@@ -52,7 +52,6 @@ offset_left = -0.072006226
 offset_top = 0.024002075
 offset_right = 0.31201172
 offset_bottom = -0.2880249
-description_stats = Array[String](["+10 max hp"])
 
 [node name="TextureButton" parent="skill_node" unique_id=925485314 groups=["nodes"] instance=ExtResource("1_brfkd")]
 layout_mode = 1
@@ -65,7 +64,6 @@ offset_top = 0.0
 offset_right = -2.032013
 offset_bottom = 0.0
 disabled = true
-description_stats = Array[String](["+15 max mana"])
 
 [node name="TextureButton" parent="skill_node/TextureButton" unique_id=141561609 groups=["nodes"] instance=ExtResource("1_brfkd")]
 layout_mode = 1
@@ -78,7 +76,6 @@ offset_top = 0.006011963
 offset_right = 0.01599884
 offset_bottom = 0.0060043335
 disabled = true
-description_stats = Array[String](["10% increased damage"])
 
 [node name="TextureButton2" parent="skill_node" unique_id=2075131214 groups=["nodes"] instance=ExtResource("1_brfkd")]
 layout_mode = 1
@@ -92,7 +89,6 @@ offset_top = 0.037994385
 offset_right = -0.03201294
 offset_bottom = 0.037994385
 disabled = true
-description_stats = Array[String](["+30 max hp"])
 
 [node name="player" parent="." unique_id=1849651985 groups=["player"] instance=ExtResource("2_nnvrw")]
 

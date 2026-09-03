@@ -13,7 +13,7 @@ config_version=5
 config/name="skill_tree"
 run/main_scene="uid://3231m0hrm5bm"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://godot_project/assets/icon.svg"
 
 [global_group]
 

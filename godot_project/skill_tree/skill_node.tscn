@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://hsduarhmd8q0"]
 
-[ext_resource type="Texture2D" uid="uid://bal6ne1v5fmxm" path="res://icon.svg" id="1_fbu8u"]
-[ext_resource type="Script" uid="uid://bvs6gn47xnq8x" path="res://skill_node.gd" id="2_0isc3"]
+[ext_resource type="Texture2D" uid="uid://bal6ne1v5fmxm" path="res://godot_project/assets/icon.svg" id="1_fbu8u"]
+[ext_resource type="Script" uid="uid://bvs6gn47xnq8x" path="res://godot_project/skill_tree/skill_node.gd" id="2_oebko"]
 
 [node name="skill_node" type="TextureButton" unique_id=284363510]
 offset_left = 271.0
@@ -12,7 +12,7 @@ toggle_mode = true
 texture_normal = ExtResource("1_fbu8u")
 ignore_texture_size = true
 stretch_mode = 0
-script = ExtResource("2_0isc3")
+script = ExtResource("2_oebko")
 
 [node name="Panel" type="Panel" parent="." unique_id=373571823]
 layout_mode = 0

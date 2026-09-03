@@ -1,6 +1,7 @@
 extends Node
 
 @export var level: int
+
 @export var max_hp: int
 @export var max_mana: int
 @export var damage_increase: int

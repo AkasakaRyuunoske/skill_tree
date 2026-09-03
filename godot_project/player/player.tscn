@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://crm3frkqu7cl7"]
 
-[ext_resource type="Script" uid="uid://j0vn5nfiv36r" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://j0vn5nfiv36r" path="res://godot_project/player/player.gd" id="1_4flbx"]
 
 [node name="player" type="Node" unique_id=1849651985]
 script = ExtResource("1_4flbx")
