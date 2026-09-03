@@ -7,6 +7,8 @@
 export.cfg
 export_credentials.cfg
 *.tmp
+.editorconfig
+.gitattributes
 
 # Imported translations (automatically generated from CSV files)
 *.translation
