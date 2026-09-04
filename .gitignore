@@ -7,8 +7,10 @@
 export.cfg
 export_credentials.cfg
 *.tmp
+
 .editorconfig
 .gitattributes
+project.godot
 
 # Imported translations (automatically generated from CSV files)
 *.translation
