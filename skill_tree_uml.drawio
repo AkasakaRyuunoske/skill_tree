@@ -1,0 +1,65 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="PMWYy-t2eY2QSH2Kuabp">
+    <mxGraphModel dx="2870" dy="1070" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ONZnApPVASQb-wZ76tZ_-5" edge="1" parent="1" source="ONZnApPVASQb-wZ76tZ_-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ONZnApPVASQb-wZ76tZ_-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ONZnApPVASQb-wZ76tZ_-6" edge="1" parent="1" source="ONZnApPVASQb-wZ76tZ_-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ONZnApPVASQb-wZ76tZ_-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ONZnApPVASQb-wZ76tZ_-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;+ 10 max hp&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="ONZnApPVASQb-wZ76tZ_-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;10% increased damage&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="275" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="ONZnApPVASQb-wZ76tZ_-7" edge="1" parent="1" source="ONZnApPVASQb-wZ76tZ_-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ONZnApPVASQb-wZ76tZ_-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ONZnApPVASQb-wZ76tZ_-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;+ 20 max mana&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="150" x="280" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="ONZnApPVASQb-wZ76tZ_-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;+ 30 max hp&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="295" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="RvfAqYBo0s0PT-qtyjex-10" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Class&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Player&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" vertex="1">
+          <mxGeometry height="140" width="190" x="-180" y="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="RvfAqYBo0s0PT-qtyjex-11" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Enum&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;SkillNodeState&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ AVAILABLE&lt;br&gt;+ ALLOCATED&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ LOCKED&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ TRANSFORMED (?)&lt;/p&gt;" vertex="1">
+          <mxGeometry height="140" width="190" x="330" y="1750" as="geometry" />
+        </mxCell>
+        <mxCell id="RvfAqYBo0s0PT-qtyjex-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Describes all possible states a node can be in&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;b&gt;AVAILABLE -&amp;gt;&lt;/b&gt; All requirements for node allocation are met, but node is not yet allocated.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;ALLOCATED -&amp;gt;&lt;/b&gt; Node is allocated&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;LOCKED -&amp;gt; &lt;/b&gt;One or more conditions for node allocation are not satisfied&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;TRANSFORMED -&amp;gt;&amp;nbsp;&lt;/b&gt;Node is transformed as outcome of a influence/tattoo&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="340" x="570" y="1740" as="geometry" />
+        </mxCell>
+        <mxCell id="RvfAqYBo0s0PT-qtyjex-13" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Class&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;SkillNode&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field1: Type&lt;br&gt;+ field2: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method1(Type): Type&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" vertex="1">
+          <mxGeometry height="140" width="190" x="330" y="1220" as="geometry" />
+        </mxCell>
+        <mxCell id="RvfAqYBo0s0PT-qtyjex-14" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Enum&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;SkillNodeEffect&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ FLAT&lt;br&gt;+ PERCENT_INCREASE&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ MULTIPLIER_INCREASE&lt;/p&gt;" vertex="1">
+          <mxGeometry height="140" width="190" x="330" y="1430" as="geometry" />
+        </mxCell>
+        <mxCell id="RvfAqYBo0s0PT-qtyjex-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;" value="&lt;div&gt;&lt;b&gt;Describes how allocation of a node should affect node&#39;s affected stats&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;FLAT -&amp;gt; &lt;/b&gt;Adds a flat value (i.e value used at the start of calculations)&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;PERCENT_INCREASE -&amp;gt; &lt;/b&gt;A percentual increment to a flat value&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;MULTIPLIER_INCREASE -&amp;gt;&lt;/b&gt;&amp;nbsp;A multiplicative increase&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="270" x="570" y="1420" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;img src=&quot;https://wikimedia.org/api/rest_v1/media/math/render/svg/9fb916341869c02c34a0e8972ffde069b363d624&quot; alt=&quot;\color [rgb]{0.6392156862745098,0.5529411764705883,0.42745098039215684}{\begin{aligned}{\text{stat}}_{total}=&amp;amp;\sum _{i=1}^{a}{\text{added stat}}_{i}\times \\&amp;amp;\left(1+\sum _{j=1}^{b}{\text{increased stat}}_{j}-\sum _{k=1}^{c}{\text{reduced stat}}_{k}\right)\times \\&amp;amp;\prod _{l=1}^{d}(1+{\text{more stat}}_{l})\times \prod _{m=1}^{e}(1-{\text{less stat}}_{m})\end{aligned}}&quot;&gt;" link="&lt;img src=&quot;https://wikimedia.org/api/rest_v1/media/math/render/svg/9fb916341869c02c34a0e8972ffde069b363d624&quot; alt=&quot;\color [rgb]{0.6392156862745098,0.5529411764705883,0.42745098039215684}{\begin{aligned}{\text{stat}}_{total}=&amp;amp;\sum _{i=1}^{a}{\text{added stat}}_{i}\times \\&amp;amp;\left(1+\sum _{j=1}^{b}{\text{increased stat}}_{j}-\sum _{k=1}^{c}{\text{reduced stat}}_{k}\right)\times \\&amp;amp;\prod _{l=1}^{d}(1+{\text{more stat}}_{l})\times \prod _{m=1}^{e}(1-{\text{less stat}}_{m})\end{aligned}}&quot;&gt;" id="RvfAqYBo0s0PT-qtyjex-17">
+          <mxCell parent="1" style="text;whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="200" width="540" x="900" y="1600" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;img src=&quot;https://wikimedia.org/api/rest_v1/media/math/render/svg/4ea14008c326f2fb428ccdf8f7a8d1fe5cbde8d3&quot; alt=&quot;\color [rgb]{0.6392156862745098,0.5529411764705883,0.42745098039215684}{\begin{aligned}a&amp;amp;{\text{ the total amount of added stats }}&amp;amp;a&amp;amp;\in \mathbb {N} _{0}\\b&amp;amp;{\text{ the total amount of increased stats }}&amp;amp;b&amp;amp;\in \mathbb {N} _{0}\\c&amp;amp;{\text{ the total amount of reduced stats }}&amp;amp;c&amp;amp;\in \mathbb {N} _{0}\\d&amp;amp;{\text{ the total amount of more stats }}&amp;amp;d&amp;amp;\in \mathbb {N} _{0}\\e&amp;amp;{\text{ the total amount of less stats }}&amp;amp;e&amp;amp;\in \mathbb {N} _{0}\\\end{aligned}}&quot;&gt;" link="&lt;img src=&quot;https://wikimedia.org/api/rest_v1/media/math/render/svg/4ea14008c326f2fb428ccdf8f7a8d1fe5cbde8d3&quot; alt=&quot;\color [rgb]{0.6392156862745098,0.5529411764705883,0.42745098039215684}{\begin{aligned}a&amp;amp;{\text{ the total amount of added stats }}&amp;amp;a&amp;amp;\in \mathbb {N} _{0}\\b&amp;amp;{\text{ the total amount of increased stats }}&amp;amp;b&amp;amp;\in \mathbb {N} _{0}\\c&amp;amp;{\text{ the total amount of reduced stats }}&amp;amp;c&amp;amp;\in \mathbb {N} _{0}\\d&amp;amp;{\text{ the total amount of more stats }}&amp;amp;d&amp;amp;\in \mathbb {N} _{0}\\e&amp;amp;{\text{ the total amount of less stats }}&amp;amp;e&amp;amp;\in \mathbb {N} _{0}\\\end{aligned}}&quot;&gt;" id="RvfAqYBo0s0PT-qtyjex-18">
+          <mxCell parent="1" style="text;whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="150" width="440" x="910" y="1450" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="RvfAqYBo0s0PT-qtyjex-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 22px;&quot;&gt;Path of exile 1 stat calculation formula&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="250" x="980" y="1360" as="geometry" />
+        </mxCell>
+        <mxCell id="RvfAqYBo0s0PT-qtyjex-20" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Enum&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Stats&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ MAX_LIFE&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ LIFE_REGENERATION&lt;br&gt;+ MAX_MANA&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ MANA_REGENERATION&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ DEFENCE&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ ATTACK_SPEED&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ CAST_SPEED&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ MOVEMENT_SPEED&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ GLOBAL_DAMAGE_MODIFIER&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ INTELLIGENCE&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ STREGHT&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ DEXTERITY&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ recalculate(void)&lt;br&gt;+ method2(Type, Type): Type&lt;/p&gt;" vertex="1">
+          <mxGeometry height="350" width="255" x="40" y="1320" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
