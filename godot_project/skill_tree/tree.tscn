@@ -2,6 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://hsduarhmd8q0" path="res://godot_project/skill_tree/skill_node.tscn" id="1_brfkd"]
 [ext_resource type="PackedScene" uid="uid://crm3frkqu7cl7" path="res://godot_project/player/player.tscn" id="2_nnvrw"]
+[ext_resource type="Script" uid="uid://dlrveyaq3ttcp" path="res://skill_node_stat_modifier.gd" id="2_ujwnl"]
+[ext_resource type="Script" uid="uid://dpqgbcibu1toj" path="res://skill_node_state.gd" id="3_bvynj"]
 [ext_resource type="Script" uid="uid://bvfeu6406r7xe" path="res://godot_project/player/player_ui.gd" id="3_gvmkm"]
 
 [sub_resource type="GDScript" id="GDScript_nnvrw"]
@@ -24,6 +26,14 @@ func _on_focus_entered() -> void:
 
 	
 "
+
+[sub_resource type="Resource" id="Resource_wwn0r"]
+script = ExtResource("2_ujwnl")
+metadata/_custom_type_script = "uid://dlrveyaq3ttcp"
+
+[sub_resource type="Resource" id="Resource_xhqnl"]
+script = ExtResource("3_bvynj")
+metadata/_custom_type_script = "uid://dpqgbcibu1toj"
 
 [node name="tree" type="Control" unique_id=89925543]
 layout_mode = 3
@@ -52,6 +62,13 @@ offset_left = -0.072006226
 offset_top = 0.024002075
 offset_right = 0.31201172
 offset_bottom = -0.2880249
+node_id = "flat_max_life_30"
+node_name = "Lesser Vitality"
+description = "+30 maximum life"
+flavorText = "More life you have, more hits they'll need to kill ya"
+stat_modifier = SubResource("Resource_wwn0r")
+state = SubResource("Resource_xhqnl")
+max_level = 3
 
 [node name="TextureButton" parent="skill_node" unique_id=925485314 groups=["nodes"] instance=ExtResource("1_brfkd")]
 layout_mode = 1

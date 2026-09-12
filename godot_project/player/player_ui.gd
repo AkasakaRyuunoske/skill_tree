@@ -21,7 +21,7 @@ func _on_update_player_stats_ui(player):
 	print("updating stats....")
 	text = TITLE \
 	+ "Level: " + str(player.level) + "\n" \
-	+ "Max HP: " + str(player.max_hp) + "\n" \
-	+ "Max Mana: " + str(player.max_mana) + "\n" \
-	+ "Damage Increase: " + str(player.damage_increase) 
+	+ "Max HP: " + str(int(player.stats.get_stat(Stats.MAX_LIFE)) ) + "\n" \
+	+ "Max Mana: " + str(int(player.stats.get_stat(Stats.MAX_MANA)) ) + "\n" \
+	+ "Damage Increase: " + str(player.stats.get_stat(Stats.GLOBAL_DAMAGE_MODIFIER))
 	

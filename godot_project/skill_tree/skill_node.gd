@@ -11,9 +11,18 @@ class_name SkillNode
 
 @export var level: int:
 	set = set_level
-@export var node_name: String
+	
 @export var icon: Image
-@export var description_stats: Array[String]
+@export var node_id: String
+@export var node_name: String
+@export var description: String
+@export var flavorText: String
+@export var stat_modifier: SkillNodeStatModifier
+@export var state: SkillNodeState
+@export var type: SkillNodeType
+@export var max_level: int
+@export var nodesIn: Array[String]
+@export var nodesOut: Array[String]
 
 signal update_player_stats_ui(player : Object)
 
@@ -22,8 +31,8 @@ func set_level(value):
 	node_label.text = "soslo / " + str(level)
 
 func _ready():
-	if description_stats.size() > 0:
-		tooltip_text = description_stats[0]
+	#if description_stats.size() > 0:
+		#tooltip_text = description_stats[0]
 	
 	if get_parent() is SkillNode:
 		connection_line.add_point(global_position + size/2)
