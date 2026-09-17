@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://dlrveyaq3ttcp" path="res://skill_node_stat_modifier.gd" id="2_ujwnl"]
 [ext_resource type="Script" uid="uid://dpqgbcibu1toj" path="res://skill_node_state.gd" id="3_bvynj"]
 [ext_resource type="Script" uid="uid://bvfeu6406r7xe" path="res://godot_project/player/player_ui.gd" id="3_gvmkm"]
+[ext_resource type="Script" uid="uid://2x7jxcl6rwi" path="res://godot_project/skill_tree/level_up_button.gd" id="6_bvynj"]
 
 [sub_resource type="GDScript" id="GDScript_nnvrw"]
 script/source = "extends Label
@@ -58,10 +59,10 @@ anchor_left = 0.21100001
 anchor_top = 0.287
 anchor_right = 0.294
 anchor_bottom = 0.43100002
-offset_left = -0.072006226
-offset_top = 0.024002075
-offset_right = 0.31201172
-offset_bottom = -0.2880249
+offset_left = -7.072006
+offset_top = 141.024
+offset_right = -6.6879883
+offset_bottom = 140.71198
 node_id = "flat_max_life_30"
 node_name = "Lesser Vitality"
 description = "+30 maximum life"
@@ -117,4 +118,22 @@ offset_bottom = 23.0
 text = "Stats:"
 script = ExtResource("3_gvmkm")
 
+[node name="level_up_button" type="Button" parent="." unique_id=959883597]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 70.0
+offset_right = 100.0
+offset_bottom = 134.0
+text = "Level Up"
+script = ExtResource("6_bvynj")
+
+[node name="allocate_skill_points_button" type="Button" parent="." unique_id=783256833]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 612.0
+offset_right = 37.0
+offset_bottom = 643.0
+text = "+ X"
+
 [connection signal="focus_entered" from="tree_label" to="tree_label" method="_on_focus_entered"]
+[connection signal="pressed" from="level_up_button" to="level_up_button" method="_on_pressed"]

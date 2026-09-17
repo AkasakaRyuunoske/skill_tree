@@ -10,7 +10,7 @@ export_credentials.cfg
 
 .editorconfig
 .gitattributes
-project.godot
+# project.godot
 
 # Imported translations (automatically generated from CSV files)
 *.translation

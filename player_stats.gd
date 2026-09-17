@@ -23,5 +23,3 @@ func initialize_default_stats() -> void:
 		Stats.DEXTERITY: 10.0,
 		Stats.INTELLIGENCE: 10.0
 	}
-	
-	print(base_stats)
